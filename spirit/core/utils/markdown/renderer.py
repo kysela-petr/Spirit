@@ -72,9 +72,9 @@ class Renderer(mistune.Renderer):
 
         if title:
             title = escape(title)
-            html = '<img src="%s" alt="%s" title="%s" data-fancybox="comment"] data-src="%s"' % (src, text, title, src)
+            html = '<img src="%s" alt="%s" title="%s" data-fancybox="comment" data-src="%s"' % (src, text, title, src)
         else:
-            html = '<img src="%s" alt="%s" data-fancybox="comment"] data-src="%s"' % (src, text, src)
+            html = '<img src="%s" alt="%s" data-fancybox="comment" data-src="%s"' % (src, text, src)
 
         if self.options.get('use_xhtml'):
             return '%s />' % html
